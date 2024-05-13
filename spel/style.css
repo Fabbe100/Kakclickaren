@@ -1,0 +1,46 @@
+.cookie-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    right: 20px; /* Adjust the distance from the right edge */
+    transform: translateY(-50%);
+}
+
+.uppgrade {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.cookie {
+    width: 300px;
+    height: 300px;
+    background: url('img/cookie.png') left/cover no-repeat;
+    border: none;
+    transition: transform 0.2s ease; /* Add transition effect to transform property */
+}
+
+.cookie:hover {
+    transform: scale(1.1); /* Scale up the button on hover */
+}
+
+.cookie:active {
+    transform: scale(0.9); /* Scale down the button when clicked */
+}
+
+.coockies {
+    margin-top: 20px; /* Adjust margin as needed */
+}
